@@ -1,4 +1,6 @@
 using PracticingDataStructures.Models;
+using System;
+using System.Collections.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -52,14 +54,87 @@ myList.Add(2);
 myList.Add(3);
 
 Console.WriteLine("Singly Linked List:");
-Console.WriteLine("");
-
 myList.Display();
 Console.WriteLine("");
 
 //Doubly linked list
+// Create a LinkedList of integers
+LinkedList<int> myDoublyList = new LinkedList<int>();
 
+// Add elements to the list
+myDoublyList.AddLast(1);
+myDoublyList.AddLast(2);
+myDoublyList.AddLast(3);
 
+// Display the elements in the list
+Console.WriteLine("Doubly LinkedList:");
+foreach (int item in myDoublyList)
+{
+    Console.Write(item + " <-> ");
+}
+Console.WriteLine("null");
+Console.WriteLine("");
+Console.WriteLine("");
+
+// Circular Linked List
+var circularLinkedList = new MyCircularLinkedList<int>();
+circularLinkedList.Add(1);
+circularLinkedList.Add(2);
+circularLinkedList.Add(3);
+
+Console.WriteLine("Circular Linked List:");
+circularLinkedList.Display();
+#endregion
+
+#region Stack
+
+Stack<int> stack = new Stack<int>();
+
+// Pushing elements onto the stack
+stack.Push(1);
+stack.Push(2);
+stack.Push(3);
+
+// Peeking at the top element without removing it
+int topElement = stack.Peek();
+Console.WriteLine("Top element: " + topElement);
+
+// Popping elements from the stack
+int poppedElement1 = stack.Pop();
+int poppedElement2 = stack.Pop();
+
+Console.WriteLine("Popped element 1: " + poppedElement1);
+Console.WriteLine("Popped element 2: " + poppedElement2);
+
+// Peek again to see the new top element
+topElement = stack.Peek();
+Console.WriteLine("Top element after popping: " + topElement);
+
+#endregion
+
+#region Queue
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+
+// Create a new queue of integers
+Queue<int> myQueue = new Queue<int>();
+
+// Enqueue elements to the queue
+myQueue.Enqueue(1);
+myQueue.Enqueue(2);
+myQueue.Enqueue(3);
+myQueue.Enqueue(4);
+myQueue.Enqueue(5);
+
+// Dequeue and process elements in FIFO order
+while (myQueue.Count > 0)
+{
+    int item = myQueue.Dequeue();
+    Console.WriteLine($"Dequeued: {item}");
+}
+Console.WriteLine("");
+Console.WriteLine("");
 #endregion
 
 app.Run();

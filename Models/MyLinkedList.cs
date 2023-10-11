@@ -8,9 +8,7 @@ public class MyLinkedList<T>
     {
         Node<T> newNode = new Node<T>(data);
         if (head == null)
-        {
             head = newNode;
-        }
         else
         {
             Node<T> current = head;
