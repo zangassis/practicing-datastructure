@@ -1,6 +1,4 @@
 using PracticingDataStructures.Models;
-using System;
-using System.Collections.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
