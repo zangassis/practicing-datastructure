@@ -47,7 +47,7 @@ dotnet run
 This repository follows a simple and organized project structure:
 
 ```
-src/
+/
 │
 ├── PracticingDataStructures/
 │   │
