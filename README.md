@@ -34,11 +34,13 @@ dotnet run
 
 ## 📚 Data Structures Covered
 
-- **🌳 Binary Tree**: Learn how to use Binary Tree in C#.
+- **📦 Array**: Learn how to use arrays in C# to store and manipulate data efficiently.
 
-- **⏲ Heap**: Explore the concept of Heap and their applications in ASP.NET Core Minimal API.
+- **🔗 Linked List**: Explore the concept of linked lists and their applications in ASP.NET Core Minimal API.
 
-- **🔐 Hashing**: Understand how to implement Hashing.
+- **📚 Stack**: Understand how to implement a stack data structure for various use cases.
+
+- **🧊 Queue**: Dive into queues and their role in ASP.NET Core Minimal API applications.
 
 ## 🚧 Project Structure
 
